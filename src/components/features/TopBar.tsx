@@ -1,14 +1,15 @@
 import Link from 'next/link';
-export function TopBar(){
+
+export function TopBar() {
   return (
-    <header className="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
-      <div className="mx-auto max-w-6xl px-6 h-14 flex items-center justify-between">
-        <Link href="/" className="font-bold text-brand-600">PT Tirya Lumba</Link>
+    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-md">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+        <Link href="/" className="font-heading font-bold text-primary">PT Tirya Lumba</Link>
         <nav className="flex items-center gap-4 text-sm">
-          <Link href="/pelatih" className="hover:text-brand-600">Pelatih</Link>
-          <Link href="/daftar" className="hover:text-brand-600">Daftar</Link>
-          <Link href="/profile" className="hover:text-brand-600">Profil</Link>
-          <Link href="/login" className="rounded-xl bg-brand-600 px-4 py-2 text-white hover:bg-brand-700">Masuk</Link>
+          <Link href="/pelatih" className="transition hover:text-primary">Pelatih</Link>
+          <Link href="/daftar" className="transition hover:text-primary">Daftar</Link>
+          <Link href="/profile" className="transition hover:text-primary">Profil</Link>
+          <Link href="/login" className="rounded-2xl bg-cyan px-4 py-2 text-white transition duration-300 ease-in-out hover:bg-primary">Masuk</Link>
         </nav>
       </div>
     </header>

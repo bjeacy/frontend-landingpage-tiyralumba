@@ -1,7 +1,25 @@
 import type { Config } from 'tailwindcss';
+
 const config: Config = {
   content: ['./src/**/*.{ts,tsx}'],
-  theme: { extend: { colors: { brand: { 50:'#eff6ff',500:'#2563eb',600:'#1d4ed8',700:'#1e40af' } } } },
+  theme: {
+    extend: {
+      colors: {
+        primary: '#0077B6',
+        cyan: '#00B4D8',
+        azure: '#E0FBFC',
+        coral: '#FF6F59',
+        neutralLight: '#F8F9FA',
+        dashboardBase: '#F3F4F6',
+        textDark: '#1D3557',
+      },
+      fontFamily: {
+        heading: ['var(--font-plus-jakarta)', 'sans-serif'],
+        body: ['var(--font-inter)', 'sans-serif'],
+      },
+    },
+  },
   plugins: [],
 };
+
 export default config;
